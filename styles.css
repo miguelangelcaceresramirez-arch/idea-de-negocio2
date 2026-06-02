@@ -16,14 +16,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 4px solid #0056b3;
+  border-bottom: 4px solid #2164b1;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
-
-
 
 header h1 {
   color: #ffffff;
@@ -110,7 +107,7 @@ label {
   margin-top: 10px;
 }
 
-input, textarea {
+input[type="text"], textarea {
   width: 100%;
   padding: 12px;
   margin-top: 5px;
@@ -122,18 +119,22 @@ input, textarea {
   box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input[type="text"]:focus, textarea:focus {
   border-color: #0056b3;
   outline: none;
 }
 
 input[type="submit"] {
+  display: inline-block;
+  width: auto;
   background-color: #0056b3;
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
   border: none;
   margin-top: 10px;
+  padding: 12px 25px;
+  border-radius: 4px;
 }
 
 input[type="submit"]:hover {
