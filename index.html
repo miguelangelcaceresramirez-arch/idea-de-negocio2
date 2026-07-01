@@ -7,71 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>
-            <img src="logo de mi proyecto.png" alt="Logo Álvarez" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%; mix-blend-mode: multiply; vertical-align: middle; margin-right: 15px;">
-            Servicio Técnico Álvarez
-        </h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <h1>Servicio Técnico Álvarez</h1>
+        <nav><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
     </header>
-
     <div class="contenedor">
-        
         <section id="inicio">
             <h2>Bienvenidos a Nuestro Taller</h2>
             <p>Somos un emprendimiento familiar, nos dedicamos a la reparación y mantenimiento de equipos electrónicos del hogar.</p>
-            <p>Contamos con años de experiencia brindando confianza, puntualidad y garantía en cada trabajo directo en tu domicilio o en nuestro local.</p>
             <a href="#contacto" class="boton">Solicitar Técnico</a>
         </section>
-
         <section id="servicios">
             <h2>Nuestros Servicios de Reparación</h2>
-            
             <div class="tarjeta">
+                <div class="contenedor-img"><img src="lineablanca.jpg" alt="Línea Blanca"></div>
                 <h3>Línea Blanca</h3>
-                <img src="lineablanca.jpg" alt="Reparación de lavadoras" style="width: 100%; max-height: 200px; object-fit: cover; margin: 10px 0; border-radius: 4px;">
                 <p>Reparación y mantenimiento preventivo de lavadoras, refrigeradoras, secadoras y lavavajillas de todas las marcas.</p>
             </div>
-
             <div class="tarjeta">
-                <h3>Electrodomésticos de Cocina</h3>
-                <img src="electro.webp" alt="Reparación de microondas" style="width: 100%; max-height: 200px; object-fit: cover; margin: 10px 0; border-radius: 4px;">
-                <p>Soporte técnico especializado para hornos microondas, cocinas eléctricas, licuadoras industriales y cafeteras.</p>
+                <div class="contenedor-img"><img src="aire acondicionado.png" alt="Climatización"></div>
+                <h3>Climatización y Cocina</h3>
+                <p>Mantenimiento integral de sistemas de aire acondicionado, estufas eléctricas, hornos microondas y electrodomésticos de cocina.</p>
             </div>
-
             <div class="tarjeta">
-                <h3>Climatización</h3>
-                <img src="aire acondicionado.png" alt="Mantenimiento de aire acondicionado" style="width: 100%; max-height: 200px; object-fit: cover; margin: 10px 0; border-radius: 4px;">
-                <p>Mantenimiento integral, limpieza de filtros y recarga de gas para sistemas de aire acondicionado y estufas eléctricas.</p>
+                <div class="contenedor-img"><img src="televisones.png" alt="televisores"></div>
+                <h3>Televisores de todo tipo </h3>
+                <p>Reparación y mantenimiento de televisores de todas las marcas y modelos.</p>
+            </div>
+            <div class="tarjeta">
+                <div class="contenedor-img"><img src="Perifericos_pc.png" alt="Computadoras"></div>
+                <h3>Computadoras, impresoras y periféricos</h3>
+                <p>Reparación y mantenimiento de computadoras, impresoras, escáneres y otros periféricos.</p>
             </div>
         </section>
-
         <section id="contacto">
             <h2>Formulario de Contacto</h2>
-            <form>
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="electrodomestico">Electrodoméstico a reparar:</label>
-                <input type="text" id="electrodomestico" name="electrodomestico">
-
-                <label for="mensaje">Detalle de la falla:</label>
-                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-
-                <input type="submit" value="Enviar Solicitud" class="boton">
+            <form action="#" method="POST">
+                <label>Nombre Completo:</label><input type="text" required>
+                <label>Electrodoméstico:</label><input type="text" required>
+                <label>Detalle de la falla:</label><textarea rows="4" required></textarea>
+                <input type="submit" value="Enviar Solicitud">
             </form>
         </section>
-
     </div>
-
-    <footer>
-        <p>&copy; 2026 Servicio Técnico Álvarez - Todos los derechos reservados.</p>
-    </footer>
-
+    <footer><p>© 2026 Servicio Técnico Álvarez - Todos los derechos reservados.</p></footer>
 </body>
 </html>
