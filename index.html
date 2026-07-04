@@ -12,29 +12,29 @@
         <nav><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
     </header>
     <div class="contenedor">
-        <section id="inicio">
+        <section id="inicio" class="animacion-entrada">
             <h2>Bienvenidos a Nuestro Taller</h2>
             <p>Somos un emprendimiento familiar, nos dedicamos a la reparación y mantenimiento de equipos electrónicos del hogar.</p>
-            <a href="#contacto" class="boton">Solicitar Técnico</a>
+            <a href="#contacto" class="boton pulso-atencion">Solicitar Técnico</a>
         </section>
         <section id="servicios">
             <h2>Nuestros Servicios de Reparación</h2>
-            <div class="tarjeta">
+            <div class="tarjeta tarjeta-animada">
                 <div class="contenedor-img"><img src="lineablanca.jpg" alt="Línea Blanca"></div>
                 <h3>Línea Blanca</h3>
                 <p>Reparación y mantenimiento preventivo de lavadoras, refrigeradoras, secadoras y lavavajillas de todas las marcas.</p>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta tarjeta-animada">
                 <div class="contenedor-img"><img src="aire acondicionado.png" alt="Climatización"></div>
                 <h3>Climatización y Cocina</h3>
                 <p>Mantenimiento integral de sistemas de aire acondicionado, estufas eléctricas, hornos microondas y electrodomésticos de cocina.</p>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta tarjeta-animada">
                 <div class="contenedor-img"><img src="televisones.png" alt="televisores"></div>
                 <h3>Televisores de todo tipo </h3>
                 <p>Reparación y mantenimiento de televisores de todas las marcas y modelos.</p>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta tarjeta-animada">
                 <div class="contenedor-img"><img src="Perifericos_pc.png" alt="Computadoras"></div>
                 <h3>Computadoras, impresoras y periféricos</h3>
                 <p>Reparación y mantenimiento de computadoras, impresoras, escáneres y otros periféricos.</p>
@@ -42,14 +42,22 @@
         </section>
         <section id="contacto">
             <h2>Formulario de Contacto</h2>
-            <form action="#" method="POST">
+<form onsubmit="event.preventDefault(); alert('¡Gracias, en breve nos pondremos en contacto!');">
+
                 <label>Nombre Completo:</label><input type="text" required>
                 <label>Electrodoméstico:</label><input type="text" required>
                 <label>Detalle de la falla:</label><textarea rows="4" required></textarea>
-                <input type="submit" value="Enviar Solicitud">
+                <input type="submit" class="pulso-atencion" value="ENVIAR SOLICITUD">
             </form>
         </section>
     </div>
-    <footer><p>© 2026 Servicio Técnico Álvarez - Todos los derechos reservados.</p></footer>
+    <footer>
+    <p>© 2026 Servicio Técnico Álvarez - Todos los derechos reservados.</p>
+    <div class="enlaces-footer">
+        <a href="https://maps.app.goo.gl/3sWKLQ7dJrPwA3hT8" target="_blank">Ver en Google Maps</a>
+        <a href="https://wa.me/969198636" target="_blank">Contactar por WhatsApp</a>
+    </div>
+</footer>
+
 </body>
 </html>
